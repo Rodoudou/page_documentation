@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#site {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+    "nav nav"
+    "aside section"
+    "aside section"
+    "footer footer";
+  height: 100%;
+}
+
+nav {
+  grid-area: nav;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  padding-right: 40px;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  margin: 10px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.logo {
+  padding-left: 40px;
+}
+aside {
+  grid-area: aside;
+  background-color: palevioletred;
+  overflow: auto; /* Ajout de la propriété overflow */
+}
+section {
+  grid-area: section;
+  background-color: orangered;
+  overflow: auto;
+}
+
+footer {
+  grid-area: footer;
+  background-color: purple;
+}
