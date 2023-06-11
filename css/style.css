@@ -126,14 +126,33 @@ footer {
   grid-area: footer;
   background-color: purple;
 }
-.footer-content {
+.footer-content :nth-child(1) {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0 50px;
+  /* padding: 0 50px; */
 }
-footer div:nth-child(2) {
+.liste-footer {
   color: red;
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
+}
+
+.logo-footer {
+  background-color: yellow;
+  margin: 0 20px;
+}
+.footer-icons {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.footer-icons :nth-child(2) {
+  color: blue;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
 }
