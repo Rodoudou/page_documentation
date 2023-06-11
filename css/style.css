@@ -147,6 +147,8 @@ footer {
 .footer-icons {
   background-color: orange;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 10px 40px;
+  height: 100%;
 }
