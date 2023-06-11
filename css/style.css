@@ -29,6 +29,7 @@ nav {
 }
 .menu ul {
   display: flex;
+  align-items: center;
 }
 .menu ul li {
   margin: 10px;
@@ -42,10 +43,43 @@ nav {
 .logo {
   padding-left: 40px;
 }
+.button.small {
+  font-size: 14px;
+  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
+}
+.button.primary {
+  background-color: #20c997;
+  color: #fff;
+}
+.button {
+  background-color: #f1f3f5;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 1rem 2rem;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+}
 aside {
   grid-area: aside;
   background-color: palevioletred;
   overflow: auto; /* Ajout de la propriété overflow */
+  text-align: center;
+}
+aside ul :nth-child(1) {
+  font-weight: bold;
+}
+aside li {
+  line-height: 25px;
+}
+aside div {
+  padding-bottom: 10px;
 }
 section {
   grid-area: section;
