@@ -126,3 +126,14 @@ footer {
   grid-area: footer;
   background-color: purple;
 }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+footer div:nth-child(2) {
+  color: red;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
