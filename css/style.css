@@ -125,34 +125,28 @@ h2 {
 footer {
   grid-area: footer;
   background-color: purple;
+  height: 200px;
 }
-.footer-content :nth-child(1) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* padding: 0 50px; */
-}
-.liste-footer {
-  color: red;
-  width: 80%;
+
+.footer-secondFloor {
   display: flex;
   justify-content: space-around;
 }
+.liste-footer {
+  background-color: pink;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
 
 .logo-footer {
+  width: 20%;
   background-color: yellow;
-  margin: 0 20px;
-}
-.footer-icons {
-  background-color: greenyellow;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
 }
 
-.footer-icons :nth-child(2) {
-  color: blue;
+.footer-icons {
+  background-color: orange;
   display: flex;
-  align-items: center;
-  margin: 0 20px;
+  justify-content: space-between;
+  padding: 10px 40px;
 }
