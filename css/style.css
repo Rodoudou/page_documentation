@@ -72,12 +72,30 @@ aside {
   overflow: auto; /* Ajout de la propriété overflow */
   text-align: center;
 }
-aside ul :nth-child(1) {
+aside h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+aside span {
   font-weight: bold;
 }
 aside li {
   line-height: 25px;
+  list-style: none;
 }
+
+aside a {
+  text-decoration: none;
+}
+.ma-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.selected {
+  color: #20c997;
+}
+
 aside div {
   padding-bottom: 10px;
 }
@@ -85,6 +103,23 @@ section {
   grid-area: section;
   background-color: orangered;
   overflow: auto;
+}
+.section-content {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+}
+
+section h1,
+h2,
+p {
+  text-align: left;
+}
+section h1,
+h2 {
+  text-align: left;
+  line-height: 40px;
+  font-weight: bold;
 }
 
 footer {
