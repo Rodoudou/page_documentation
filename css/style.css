@@ -142,6 +142,7 @@ footer {
 .logo-footer {
   width: 20%;
   background-color: yellow;
+  text-align: center;
 }
 
 .footer-icons {
