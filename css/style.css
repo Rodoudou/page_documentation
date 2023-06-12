@@ -7,6 +7,9 @@ body {
 h1 {
   font-size: 20px;
 }
+h2 {
+  font-size: 18px;
+}
 #site {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -122,6 +125,13 @@ h2 {
   text-align: left;
   line-height: 40px;
   font-weight: bold;
+}
+.para {
+  margin-top: 50px;
+}
+#signup-color,
+#pricing-color {
+  color: #20c997;
 }
 .border-with-circle {
   border-left: 4px solid #20c997; /* Bordure gauche */
