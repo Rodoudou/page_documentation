@@ -12,4 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       item.classList.add("selected");
     });
   });
+
+  const burgerIcon = document.querySelector(".burger-icon");
+  const menu = document.querySelector(".menu ul");
+
+  burgerIcon.addEventListener("click", () => {
+    menu.classList.toggle("show-menu");
+  });
 });

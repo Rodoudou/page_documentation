@@ -13,20 +13,28 @@ h2 {
 #site {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: 70px 4fr 1fr;
   grid-template-areas:
     "nav nav"
     "aside section"
     "aside section"
     "footer footer";
-  height: 100%;
+
+  height: 100vh;
 }
 
 nav {
   grid-area: nav;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px gray solid;
+}
+.nav-content {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .menu {
@@ -43,6 +51,56 @@ nav {
 
 .menu a {
   text-decoration: none;
+  color: #000;
+}
+.menu a:hover {
+  color: #20c997;
+}
+.search {
+  width: 200px;
+  height: 30px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style lorsque le champ de recherche est en focus */
+.search:focus {
+  outline: none;
+  border-color: #20c997;
+  box-shadow: 0 0 0 2px #20c99740;
+}
+
+/* Style lorsque le champ de recherche est rempli */
+.search:valid {
+  border-color: #20c997;
+}
+
+/* Style du bouton de recherche à côté de l'input */
+.search-button {
+  padding: 8px 12px;
+  background-color: #20c997;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style du bouton de recherche au survol */
+.search-button:hover {
+  background-color: #1aae8c;
+}
+
+.burger-icon {
+  display: none;
+}
+.burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px;
 }
 
 .logo {
@@ -65,7 +123,7 @@ nav {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1em;
+  height: 1em;
   padding: 1rem 2rem;
   text-align: center;
   -webkit-transition: all 0.3s cubic-bezier(0.694, 0, 0.335, 1);
@@ -76,6 +134,8 @@ aside {
   background-color: palevioletred;
   overflow: auto; /* Ajout de la propriété overflow */
   text-align: center;
+  width: 100%;
+  padding: 20px 0;
 }
 aside h2 {
   text-align: center;
@@ -85,12 +145,17 @@ aside span {
   font-weight: bold;
 }
 aside li {
-  line-height: 25px;
+  height: 25px;
   list-style: none;
 }
 
 aside a {
   text-decoration: none;
+  color: #000;
+}
+aside a:hover {
+  text-decoration: none;
+  color: #20c997;
 }
 .ma-liste {
   list-style: none;
@@ -108,9 +173,11 @@ section {
   grid-area: section;
   background-color: orangered;
   overflow: auto;
+  width: 100%;
+  padding: 30px 0;
 }
 .section-content {
-  width: 700px;
+  width: 600px;
   text-align: center;
   margin: auto;
 }
@@ -123,11 +190,11 @@ p {
 section h1,
 h2 {
   text-align: left;
-  line-height: 40px;
+  height: 40px;
   font-weight: bold;
 }
 .para {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 #signup-color,
 #pricing-color {
@@ -161,8 +228,7 @@ h2 {
 }
 footer {
   grid-area: footer;
-  background-color: purple;
-  height: 200px;
+  width: 100%;
 }
 
 .footer-secondFloor {
@@ -170,12 +236,22 @@ footer {
   justify-content: space-around;
 }
 .liste-footer {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   justify-content: space-around;
   width: 80%;
+  padding: 0 0 40px 0;
 }
 
+.liste-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.liste-footer a:hover {
+  text-decoration: none;
+  color: #20c997;
+}
 .logo-footer {
   width: 20%;
   background-color: yellow;
@@ -183,10 +259,62 @@ footer {
 }
 
 .footer-icons {
-  background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 40px;
-  height: 100%;
+  margin-top: 40px;
+  /* background-color: red; */
+}
+
+/* Modifier la taille des icônes */
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin,
+.fa-slack,
+.fa-yin-yang {
+  font-size: 24px;
+  color: #20c997;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 740px) {
+  #site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 2fr 2fr 1fr;
+    grid-template-areas:
+      "nav nav"
+      "section section"
+      "section section"
+      "footer footer";
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu ul.show-menu {
+    display: block;
+  }
+
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .footer-icons {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  aside {
+    display: none;
+  }
 }
