@@ -30,7 +30,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px gray solid;
+  border-bottom: 1px solid rgb(204, 197, 197);
 }
 .nav-content {
   display: flex;
@@ -160,7 +160,7 @@ aside a:hover {
 .ma-liste {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 8px 0 0 0;
 }
 .selected {
   color: #1a8cd8;
@@ -243,7 +243,10 @@ footer {
   width: 80%;
   padding: 0 0 40px 0;
 }
-
+.slack {
+  /* background-color: red; */
+  margin: 10px 0;
+}
 .liste-footer a {
   text-decoration: none;
   color: #000;
