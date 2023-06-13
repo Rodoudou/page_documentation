@@ -54,7 +54,7 @@ nav {
   color: #000;
 }
 .menu a:hover {
-  color: #20c997;
+  color: #1a8cd8;
 }
 .search {
   width: 200px;
@@ -68,19 +68,19 @@ nav {
 /* Style lorsque le champ de recherche est en focus */
 .search:focus {
   outline: none;
-  border-color: #20c997;
-  box-shadow: 0 0 0 2px #20c99740;
+  border-color: #1a8cd8;
+  box-shadow: 0 0 0 2px #1a8cd840;
 }
 
 /* Style lorsque le champ de recherche est rempli */
 .search:valid {
-  border-color: #20c997;
+  border-color: #1a8cd8;
 }
 
 /* Style du bouton de recherche à côté de l'input */
 .search-button {
   padding: 8px 12px;
-  background-color: #20c997;
+  background-color: #1a8cd8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -100,7 +100,7 @@ nav {
   width: 25px;
   height: 3px;
   background-color: #000;
-  margin: 4px;
+  margin: 4px 0 0 20px;
 }
 
 .logo {
@@ -112,7 +112,7 @@ nav {
   padding: 0.5rem 1.25rem;
 }
 .button.primary {
-  background-color: #20c997;
+  background-color: #1a8cd8;
   color: #fff;
 }
 .button {
@@ -131,7 +131,7 @@ nav {
 }
 aside {
   grid-area: aside;
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   overflow: auto; /* Ajout de la propriété overflow */
   text-align: center;
   width: 100%;
@@ -155,7 +155,7 @@ aside a {
 }
 aside a:hover {
   text-decoration: none;
-  color: #20c997;
+  color: #1a8cd8;
 }
 .ma-liste {
   list-style: none;
@@ -163,7 +163,7 @@ aside a:hover {
   margin: 0;
 }
 .selected {
-  color: #20c997;
+  color: #1a8cd8;
 }
 
 aside div {
@@ -171,7 +171,7 @@ aside div {
 }
 section {
   grid-area: section;
-  background-color: orangered;
+  /* background-color: orangered; */
   overflow: auto;
   width: 100%;
   padding: 30px 0;
@@ -194,14 +194,14 @@ h2 {
   font-weight: bold;
 }
 .para {
-  margin-top: 0px;
+  margin: 40px 0;
 }
 #signup-color,
 #pricing-color {
-  color: #20c997;
+  color: #1a8cd8;
 }
 .border-with-circle {
-  border-left: 4px solid #20c997; /* Bordure gauche */
+  border-left: 4px solid #1a8cd8; /* Bordure gauche */
   background-color: rgb(233, 230, 230);
   padding-left: 20px; /* Espacement à gauche */
   position: relative;
@@ -214,9 +214,9 @@ h2 {
   width: 25px; /* Taille du cercle */
   height: 25px;
   border-radius: 50%; /* Forme circulaire */
-  background-color: #20c997; /* Couleur de fond du cercle */
+  background-color: #1a8cd8; /* Couleur de fond du cercle */
   position: absolute;
-  top: 50%; /* Position verticale au centre */
+  top: 50%; /* Position vert1111icale au centre */
   left: -13px; /* Décalage à gauche pour aligner le cercle */
   transform: translate(0, -50%); /* Ajustement vertical */
 }
@@ -229,6 +229,7 @@ h2 {
 footer {
   grid-area: footer;
   width: 100%;
+  margin-top: 100px;
 }
 
 .footer-secondFloor {
@@ -250,11 +251,11 @@ footer {
 
 .liste-footer a:hover {
   text-decoration: none;
-  color: #20c997;
+  color: #1a8cd8;
 }
 .logo-footer {
   width: 20%;
-  background-color: yellow;
+  /* background-color: yellow; */
   text-align: center;
 }
 
@@ -266,6 +267,7 @@ footer {
   padding: 10px 40px;
   margin-top: 40px;
   /* background-color: red; */
+  border-top: 1px solid rgb(204, 197, 197);
 }
 
 /* Modifier la taille des icônes */
@@ -275,7 +277,7 @@ footer {
 .fa-slack,
 .fa-yin-yang {
   font-size: 24px;
-  color: #20c997;
+  color: #1a8cd8;
   margin: 0 8px;
 }
 
@@ -316,5 +318,8 @@ footer {
   }
   aside {
     display: none;
+  }
+  section {
+    margin: 0 30px;
   }
 }
