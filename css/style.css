@@ -284,7 +284,7 @@ footer {
   margin: 0 8px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 900px) {
   #site {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -322,7 +322,7 @@ footer {
   aside {
     display: none;
   }
-  section {
+  .section-content {
     margin: 0 30px;
   }
 }
